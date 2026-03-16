@@ -15,6 +15,6 @@ To ensure a good Noise-Figure (NF) we decided to build a LNA with a cascaded des
 Inbetween the two amplifiers it is recommended to place a Bandpassfilter to remove interference and prevent Oscillations in the circuit. 
 
 We went with the following Options
-1st Amp: SKY67151-396LF
-Bandpass: CBP-1320Q+
-2nd Amp: PGA-103+ 
+-  1st Amp: SKY67151-396LF
+-  Bandpass: CBP-1320Q+
+-  2nd Amp: PGA-103+ 
