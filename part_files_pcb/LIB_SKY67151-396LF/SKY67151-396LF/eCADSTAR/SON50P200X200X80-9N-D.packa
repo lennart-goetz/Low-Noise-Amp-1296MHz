@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "SKY67151-396LF"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-06-19-11:22:16)
+    (mountForm default
+        (footprintRef "SON50P200X200X80-9N-D")
+        (spec "System")
+    )
+)

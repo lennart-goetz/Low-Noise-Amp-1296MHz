@@ -1,0 +1,104 @@
+<QucsStudio Schematic 5.8>
+<Properties>
+View=0,0,1040,800,1,0,0
+Grid=10,10,2
+OpenDisplay=3
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+Eqn Eqn1 5 40 90 0 8 0 "f_0=30 GHz="1"epsilon_r=4="1"L_D=200 µm="1"GUIonly"0
+Eqn Eqn2 5 230 90 0 8 0 "lambda_0=1 cm="1"GUIonly"0
+Eqn Eqn3 5 780 90 0 8 0 "Z_L=50 Ω="1"epsilon_reff=4="1"L_TL=200 µm="1"GUIonly"0
+Eqn Eqn4 5 40 420 0 8 0 "Z=30 Ω="1"Z_0=50 Ω="1"GUIonly"0
+Eqn Eqn5 5 370 250 0 8 0 "G=10 dB=power gain:"1"B=10 GHz=bandwidth:"1"GUIonly"0
+Eqn Eqn6 5 630 50 0 8 0 "f=1 GHz=frequency:"1"rho=2.4e-8 Ωm=resistivity:"1"mu_r=1=permeability:"1"GUIonly"0
+Eqn Eqn7 5 780 330 0 8 0 "L=66.7 pH="1"C=26.7 fF="1"GUIonly"0
+Eqn Eqn8 5 270 420 0 8 0 "r=0.1="1"GUIonly"0
+Eqn Eqn9 5 590 450 0 8 0 "s=1.667=VSWR:"1"GUIonly"0
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+<Eqn 40 270 149 44 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"2*pi * (L_D / lambda)" "°" #0000ff 1 1 1 -1 0 1 "\phi =">
+</Eqn>
+<Eqn 40 210 127 45 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"lambda = c0 / (f_0 * sqrt(epsilon_r))" "m" #0000ff 1 3 1 -1 0 0 "">
+</Eqn>
+<Eqn 40 330 183 46 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"L_D * (sqrt(epsilon_r) / c0)" "s" #0000ff 1 3 1 -1 0 1 "t_{delay} =">
+</Eqn>
+<Eqn 230 170 154 45 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"c0 / (lambda_0 * sqrt(epsilon_r))" "Hz" #0000ff 1 3 1 -1 0 1 "f_{0} =">
+</Eqn>
+<Eqn 490 170 192 42 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"sqrt(rho / (pi*f*mu0*mu_r))" "m" #0000ff 1 3 1 -1 0 1 "\delta_{s} =">
+</Eqn>
+<Eqn 780 270 201 94 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"Z_L * sqrt(epsilon_reff) / c0 * L_TL" "H" #0000ff 1 3 1 -1 0 1 "L =">
+	<"sqrt(epsilon_reff) / (c0 * Z_L) * L_TL" "F" #0000ff 1 3 1 -1 0 1 "C =">
+</Eqn>
+<Eqn 780 500 201 110 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"sqrt(L / C)" "Ω" #0000ff 1 3 1 -1 0 1 "Z_{L} =">
+	<"sqrt(L * C)" "s" #0000ff 1 3 1 -1 0 1 "t_{delay} =">
+	<"L_TL / sqrt(L * C)" "m/s" #0000ff 1 3 1 -1 0 1 "velocity =">
+</Eqn>
+<Eqn 530 580 203 87 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"(s - 1) / (s + 1)" "" #0000ff 1 3 1 -1 0 1 "|r| =">
+	<"20*log10((s - 1) / (s + 1))" "dB" #0000ff 1 3 1 -1 0 1 "|r| =">
+</Eqn>
+<Eqn 280 330 181 18 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"sqrt(G) * B" "Hz" #0000ff 1 3 1 -1 0 1 "GBW =">
+</Eqn>
+<Eqn 780 580 138 42 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"L / Z_L" "s" #0000ff 1 3 1 -1 0 1 "t_{delay} =">
+</Eqn>
+<Eqn 270 580 182 118 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"Z_0 * ((1+r) / (1-r))" "Ω" #0000ff 1 3 1 -1 0 1 "Z =">
+	<"20*log10(mag(r))" "dB" #0000ff 1 3 1 -1 0 0 "">
+	<"VSWR = (1 + mag(r)) / (1 - mag(r))" "" #0000ff 1 3 1 -1 0 0 "">
+</Eqn>
+<Eqn 40 580 178 95 71 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 -1 -1 -1 "" "" "">
+	<Legend 10 -100 0>
+	<"(Z - Z_0) / (Z + Z_0)" "" #0000ff 1 3 1 -1 0 1 "r =">
+	<"dB((Z - Z_0) / (Z + Z_0))" "dB" #0000ff 1 3 1 -1 0 1 "r_{dB} =">
+</Eqn>
+</Diagrams>
+<Paintings>
+Text 36 31 20 #000000 0 Frequency and wave length λ:
+Line 20 340 0 -320 #0000ff 3 1
+Line 20 340 230 0 #0000ff 3 1
+Line 20 20 400 0 #0000ff 3 1
+Line 750 340 0 -320 #0000ff 3 1
+Line 510 340 240 0 #0000ff 3 1
+Text 436 31 20 #000000 0 Skin Depth:
+Line 430 20 320 0 #0000ff 3 1
+Line 430 180 0 -160 #0000ff 3 1
+Line 420 180 0 -160 #0000ff 3 1
+Line 250 180 170 0 #0000ff 3 1
+Text 776 31 20 #000000 0 Transmission Line:
+Rectangle 760 20 250 570 #0000ff 3 1 #c0c0c0 1 0
+Rectangle 20 350 480 240 #0000ff 3 1 #c0c0c0 1 0
+Text 36 361 20 #000000 0 Impedance and Reflection Coefficient:
+Rectangle 510 350 240 240 #0000ff 3 1 #c0c0c0 1 0
+Text 526 361 20 #000000 0 Voltage \n Standing-Wave Ratio:
+Rectangle 260 190 240 150 #0000ff 3 1 #c0c0c0 1 0
+Text 266 201 20 #000000 0 Gain-Bandwidth-Product:
+Line 250 340 0 -160 #0000ff 3 1
+Line 510 340 0 -160 #0000ff 3 1
+Line 430 180 80 0 #0000ff 3 1
+Text 535 211 16 #000000 0 gold      → 2.4e-8 Ωm \n silver      → 1.62e-8 Ωm \n copper    → 1.72e-8 Ωm \n aluminum → 2.62e-8 Ωm \n nickel       → 6.9e-8 Ωm \n tin            → 12.4e-8 Ωm
+Text 535 191 18 #000000 0 resistivity:
+</Paintings>

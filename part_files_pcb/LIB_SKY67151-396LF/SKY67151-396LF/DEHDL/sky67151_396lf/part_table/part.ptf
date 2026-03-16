@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SKY67151_396LF'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Skyworks", "SKY67151-396LF" (!) = "", "SON50P200X200X80-9N-D", "Small Outline No-lead", "873-SKY67151-396LF", "https://www.mouser.co.uk/ProductDetail/Skyworks-Solutions-Inc/SKY67151-396LF?qs=Xju9evkTxaejMohAlwo9TA%3D%3D", "", "", "RF Amplifier 700-3800MHz NF .6dB OP1dB 20dBm @2.5GHz", "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-19/379330.pdf", "0.8 mm"
+END_PART
+
+END.

@@ -1,0 +1,18 @@
+.SKY67151-396LF :1 ;RF Amplifier 700-3800MHz NF .6dB OP1dB 20dBm @2.5GHz
+SON50P200X200X80-9N-D
+*STM IC
+*NGS
+*PLB 1="N/C_1" 2="RFIN" 3="VBIAS" 4="N/C_2" 5="N/C_3" 6="N/C_4" 7="RFOUT/VDD" 8="N/C_5" 9="EP"
+*MXP 9
+*DFN SKY67151-396LF
+~!Manufacturer_Name (Skyworks)
+~!Manufacturer_Part_Number (SKY67151-396LF)
+~!Mouser Part Number (873-SKY67151-396LF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Skyworks-Solutions-Inc/SKY67151-396LF?qs=Xju9evkTxaejMohAlwo9TA%3D%3D)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/DKDS-19/379330.pdf)
+~!Height (0.8mm)
+~!3D_Model (SKY67151-396LF)
+SKY67151-396LF
+1.1!U 2.1!U 3.1!U 4.1!U 9.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

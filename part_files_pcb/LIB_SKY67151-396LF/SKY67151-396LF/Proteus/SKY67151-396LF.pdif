@@ -1,0 +1,155 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "SKY67151-396LF"
+   (description "RF Amplifier 700-3800MHz NF .6dB OP1dB 20dBm @2.5GHz")
+   (family "ANA")
+   (package "SON50P200X200X80-9N-D")
+   (attribute "Datasheet Link" "https://datasheet.datasheetarchive.com/originals/distributors/DKDS-19/379330.pdf")
+   (attribute "Geometry.Height" "0.8mm")
+   (attribute "Manufacturer_Name" "Skyworks")
+   (attribute "Manufacturer_Part_Number" "SKY67151-396LF")
+   (attribute "Mouser Part Number" "873-SKY67151-396LF")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Skyworks-Solutions-Inc/SKY67151-396LF?qs=Xju9evkTxaejMohAlwo9TA%3D%3D")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "SKY67151-396LF")
+    (pin "N/C_1" 1 PS)
+    (pin "RFIN" 2 PS)
+    (pin "VBIAS" 3 PS)
+    (pin "N/C_2" 4 PS)
+    (pin "EP" 9 PS)
+    (pin "N/C_5" 8 PS)
+    (pin "RFOUT/VDD" 7 PS)
+    (pin "N/C_4" 6 PS)
+    (pin "N/C_3" 5 PS)
+   )
+  )
+  (symbol "SKY67151-396LF"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1200 100) (pt 1200 -600) (pt 200 -600) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 -800) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SON50P200X200X80-9N-D"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -1.625 1.25)
+      (pt 1.625 1.25)
+      (pt 1.625 -1.25)
+      (pt -1.625 -1.25)
+      (pt -1.625 1.25))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1 1)
+      (pt 1 1)
+      (pt 1 -1)
+      (pt -1 -1)
+      (pt -1 1))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1 0.5)
+      (pt -0.5 1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.25)
+     (circle
+      (pt -1.275 1.4) (pt -1.525 1.4)
+     )
+    )
+   )
+   (leg 1 (pt -1.05 0.75) (padstack 0))
+   (leg 2 (pt -1.05 0.25) (padstack 0))
+   (leg 3 (pt -1.05 -0.25) (padstack 0))
+   (leg 4 (pt -1.05 -0.75) (padstack 0))
+   (leg 5 (pt 1.05 -0.75) (padstack 2))
+   (leg 6 (pt 1.05 -0.25) (padstack 2))
+   (leg 7 (pt 1.05 0.25) (padstack 2))
+   (leg 8 (pt 1.05 0.75) (padstack 2))
+   (leg 9 (pt 0 0) (padstack 9))
+   (padstack 0
+    (pad (layer TCOP) (path (pt -0.35 0.15) (arc (pt 0.2 0.15) (pt 0.05 -0.15) (pt 0.35 0.15) (start -180) (sweep 90)) (pt 0.2 -0.15) (pt -0.35 -0.15) (pt -0.35 0.15)))
+   )
+   (padstack 1
+    (pad (layer TCOP) (path (pt -0.15 -0.35) (arc (pt -0.15 0.2) (pt -0.15 0.05) (pt 0.15 0.35) (start -180) (sweep 180)) (pt 0.15 0.2) (pt 0.15 -0.35) (pt -0.15 -0.35)))
+   )
+   (padstack 2
+    (pad (layer TCOP) (path (pt 0.35 -0.15) (arc (pt -0.2 -0.15) (pt -0.35 -0.15) (pt -0.05 0.15) (start -180) (sweep 270)) (pt -0.2 0.15) (pt 0.35 0.15) (pt 0.35 -0.15)))
+   )
+   (padstack 3
+    (pad (layer TCOP) (path (pt 0.15 0.35) (arc (pt 0.15 -0.2) (pt -0.15 -0.35) (pt 0.15 -0.05) (start -180) (sweep 0)) (pt -0.15 -0.2) (pt -0.15 0.35) (pt 0.15 0.35)))
+   )
+   (padstack 9
+    (plated false)
+    (pad (layer TCOP) (rectf 1 1.8 0 0 90))
+   )
+   (model "SKY67151-396LF.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

@@ -1,0 +1,81 @@
+<body bgcolor=#FFFAE3 style="margin-left:12; margin-right:12; font-size:large">
+<h1><br>Header1</h1>
+<p>
+Multi-line description: Just a totally normal text without any special formatting.<br>
+&rarr;&nbsp;Text, <b>text</b>, <i>text</i><br>
+</p>
+
+<table>
+
+<tr>
+<td><b><a href="schematic.sch">schematic.sch</a></b></td>
+<td>&nbsp;-&nbsp;</td>
+<td>short-description</td>
+</tr>
+
+<tr>
+<td><b><a href="code.cpp">source.cpp</a></b></td>
+<td>&nbsp;-&nbsp;</td>
+<td>file content</td>
+</tr>
+
+</table>
+
+<br><hr>
+
+<h1>Header2</h1>
+<p>
+Again a long, long, but <font color=#FF0000>important</font> text.<br>
+<img src="picture.png">picture<br>
+</p>
+
+<ol>
+  <li>Issue1</li>
+  <li>Issue2</li>
+  <li>Issue3</li>
+</ol>
+
+<ul>
+  <li>Issue</li>
+  <li>Problem</li>
+  <li>Information</li>
+</ul>
+
+<br><hr>
+
+<h3>Header3</h3>
+
+<table cellspacing="0" cellpadding="6" border="1" align="left">
+<tr bgcolor="#DBE0FF">
+  <td align="center"><b>Name</b></td>
+  <td align="center"><b>Default Value</b></td>
+  <td align="center"><b>Unit</b></td>
+  <td align="center"><b>Description</b></td>
+</tr>
+<tr>
+  <td>R</td>
+  <td align="center">50</td>
+  <td align="center">Ohm</td>
+  <td align="center">resistance</td>
+</tr>
+<tr bgcolor="#F3F6FB">
+  <td>Temp</td>
+  <td align="center">25</td>
+  <td align="center">°C</td>
+  <td align="center">device temperature</td>
+</tr>
+<tr>
+  <td>Symbol</td>
+  <td align="center">US</td>
+  <td align="center">--</td>
+  <td align="center">symbol in schematic editor</td>
+</tr>
+<tr bgcolor="#F3F6FB">
+  <td>Package</td>
+  <td align="center">SMD0603</td>
+  <td align="center">--</td>
+  <td align="center">footprint in PCB editor</td>
+</tr>
+</table>
+
+</body>
