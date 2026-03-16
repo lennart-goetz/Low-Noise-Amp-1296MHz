@@ -1961,13 +1961,14 @@
 		)
 		(uuid "0816e1c7-c8f7-40f7-8ebb-d84dc8858603")
 	)
-	(text "abweichungen vom Design Guide PGA-103+: \nDC-Block von 10nF auf 100pF abgeändert\nRF-Choke von 68nH auf 100nH abgeändert\n"
+	(text "abweichungen vom Design Guide PGA-103+: \nDC-Block von 10nF auf 100pF abgeändert\n		10nF ist bei 1.3GHz über Resonanz\n		100pF wirkt für kleinere Frequenzen wie Hochpass\nRF-Choke von 68nH auf 100nH abgeändert\n\n"
 		(exclude_from_sim no)
-		(at 281.94 197.866 0)
+		(at 243.586 199.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "3051560b-f3fe-47a8-a976-6fe72e7e1650")
 	)
@@ -1981,6 +1982,16 @@
 		)
 		(uuid "45b0500d-3c6f-480c-a224-a03a585424af")
 	)
+	(text "LDO auf 5V oder 6V?"
+		(exclude_from_sim no)
+		(at 282.956 217.678 0)
+		(effects
+			(font
+				(size 3.048 3.048)
+			)
+		)
+		(uuid "c800fec9-f986-4acb-96ef-447da437109f")
+	)
 	(junction
 		(at 345.44 163.83)
 		(diameter 0)
@@ -1992,12 +2003,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1a1d8e6b-c921-41b8-bf7e-56c0b1a85467")
-	)
-	(junction
-		(at 312.42 163.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2579b6b8-2305-4307-88f1-7f9015ff692f")
 	)
 	(junction
 		(at 158.75 115.57)
@@ -2022,12 +2027,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30f2250e-f9e4-4fd7-af88-4499430f9578")
-	)
-	(junction
-		(at 312.42 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "313d9a49-028a-45b0-9736-4ab44da4c70a")
 	)
 	(junction
 		(at 90.17 142.24)
@@ -2088,6 +2087,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b844c490-7a1c-4187-9b18-df971df6991d")
+	)
+	(junction
+		(at 307.34 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b91a2415-07a5-4461-a779-65d92b23cdfe")
 	)
 	(junction
 		(at 102.87 111.76)
@@ -2247,16 +2252,6 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 142.24) (xy 312.42 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13aaffaf-e228-421b-b7bb-b5063e2746f1")
-	)
-	(wire
-		(pts
 			(xy 102.87 95.25) (xy 102.87 102.87)
 		)
 		(stroke
@@ -2317,7 +2312,7 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 163.83) (xy 312.42 163.83)
+			(xy 307.34 163.83) (xy 320.04 163.83)
 		)
 		(stroke
 			(width 0)
@@ -2427,6 +2422,16 @@
 	)
 	(wire
 		(pts
+			(xy 298.45 163.83) (xy 307.34 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ef84880-f1a2-4f1a-a3cf-5c5b75ffb65f")
+	)
+	(wire
+		(pts
 			(xy 234.95 168.91) (xy 234.95 170.18)
 		)
 		(stroke
@@ -2467,16 +2472,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 163.83) (xy 320.04 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d200377-504b-4ff5-83ea-45db0bef8e89")
-	)
-	(wire
-		(pts
 			(xy 325.12 166.37) (xy 320.04 166.37)
 		)
 		(stroke
@@ -2497,7 +2492,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 142.24) (xy 344.17 142.24)
+			(xy 304.8 142.24) (xy 344.17 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2947,16 +2942,6 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 153.67) (xy 312.42 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2b4a20a-ca40-4e53-a3e4-ba2f34683295")
-	)
-	(wire
-		(pts
 			(xy 276.86 96.52) (xy 276.86 111.76)
 		)
 		(stroke
@@ -2994,16 +2979,6 @@
 			(type default)
 		)
 		(uuid "e6bb23db-76f3-4223-bef0-d3e27b2865e3")
-	)
-	(wire
-		(pts
-			(xy 312.42 142.24) (xy 312.42 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f23ad9a8-2844-4488-94cd-23a37cca20c0")
 	)
 	(wire
 		(pts
@@ -3087,6 +3062,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "13.8V"
+		(shape input)
+		(at 298.45 163.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c29d792d-89f2-4705-a846-21aaee1bfb95")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 290.1429 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3559,76 +3556,6 @@
 			(project "kicad_lna_design"
 				(path "/64c56d85-b9fa-4642-8dda-836289de401f"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 312.42 149.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16587ee6-17e6-4113-b6eb-fde36515e866")
-		(property "Reference" "L6"
-			(at 313.69 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nH"
-			(at 313.69 151.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 312.42 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 312.42 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 312.42 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a767b0bb-efae-427a-841d-a9027810de92")
-		)
-		(pin "1"
-			(uuid "97b77deb-ac4a-4662-b36c-c0177f9daa66")
-		)
-		(instances
-			(project "kicad_lna_design"
-				(path "/64c56d85-b9fa-4642-8dda-836289de401f"
-					(reference "L6")
 					(unit 1)
 				)
 			)
