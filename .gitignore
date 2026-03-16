@@ -1,0 +1,30 @@
+# --- KiCad ---
+# Temporäre Dateien und Backups
+**/fp-info-cache
+**/*.kicad_prl
+**/*-backups/
+**/*.kicad_pcb-bak
+**/*.kicad_sch-bak
+**/*.bak
+**/*.lck
+**/_autosave-*
+**/*.tmp
+
+# --- Software & Binaries (uSimmics / Simulation) ---
+# Wir ignorieren die ausfuehrbaren Programme, behalten aber ggf. Templates/Library-Strukturen
+**/uSimmics/bin/
+**/uSimmics/MinGW/
+**/uSimmics/octave/
+**/*.exe
+**/*.dll
+**/*.a
+**/*.o
+
+# --- Allgemeine Binaerformate & Backups ---
+*.zip
+*.7z
+*.tar.gz
+
+# --- OS-Spezifisch ---
+.DS_Store
+Thumbs.db
