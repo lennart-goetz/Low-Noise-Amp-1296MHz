@@ -38,5 +38,20 @@ We decided to use the following Bias-T:
 ## Update 24.03.2026
 After simulation the RF Signal, the Schematic and PCB were designed. The following features were added to the final Design:
 
-# power supply
-There are two possibilities to supply the ICs with 5V. The obvious one is to 
+![Circuit Diagramm Version 1](images/Schaltplan.jpg)
+
+### power supply
+There are two possibilities to supply the ICs with 5V. The obvious one is to configure the LDO for 5V and directly connect it to the ICs with some Capacitors. The second option is to configure it to a higher voltage and place Resistors in series. The voltage drop over the resistors will bring the voltage back down to 5V. The theoretical advantage of this is, that the resistors form low pass filters with the capacitors. However, this brings the risk of the voltage droping more when the current rises. (more voltage drop across the resistor, therefore less voltage for the IC)
+To try both configurations, the Design has some Resistors which can be bridged or left open, to configure it accordingly. Please refer to the Datasheet of the LDO for more information. Once the PCB arrives, I will test which option brings better results. 
+
+### waveguides
+In RF PCB Design it is very important to know the exact layer stack that the manufacturer uses. However, our supplier only has a defined layer stacks for 4 Layers or more. Due to that, my Design is a 4 Layer PCB. The Components have to be on the top (or bottom) layer, and the ground layer should be directly underneath. The distance between the signal layer and the ground layer is very small in that case. In my case it is 0.14mm.
+
+The SKY67151 and the CBP-1320Q+ are both designed for grounded coplanar wave guide transmission line. I used the internal Altium Layer stack manager to calculate the track with for that wave guide. Unfortunately the small distance between signal Layer and ground plane results in a very thin track width. In my case the track width is 0.207mm and 0.127mm gap to the ground planes. 
+
+That brings the issue, that the 0402 components (Resistors, Capacitors...) are quite a lot bigger than the track itself. This results in a change of impedance as the signals hits the component. To encounter this Problem I applied to measures:
+
+- Tapering: slowly increasing the width of the track to decrease the parasitc impedance
+- ground cutout: The "big" pads of the 0402 components have a bigger capacitance against ground than they are supposed to. A cutout in the ground plane reduces the effective area of the pad against ground and brings the capacitance down. 
+
+![PCB Design Version 1](images/PCB1.png)
