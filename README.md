@@ -10,6 +10,9 @@ My main task is to design and build a Low Noise Amplifier that should me mounted
 To protect the LNA when transmitting, we will use coaxial Relais and a Sequencer. These will disconnect the LNA from the Signal path to the antenna. 
 Please take a look at "Systemskizze.png" for a more detailed layout.
 
+![Systemskizze](Systemskizze.png)
+
+
 ## LNA Topologie and parts
 To ensure a good Noise-Figure (NF) we decided to build a LNA with a cascaded design of two amplifiers. The first Amp is optimized for a low noise figure, while the other amplifier can be optimized to reach the desired signal gain. 
 Inbetween the two amplifiers it is recommended to place a Bandpassfilter to remove interference and prevent Oscillations in the circuit. 
@@ -31,3 +34,9 @@ As the Circuit in "Systemskizze.png" suggests, the Sequencer will feed DC into t
 
 We decided to use the following Bias-T:
 23cm 600W Bias Tee 1240 to 1320MHz Outdoor from Antenna Amplifiers
+
+## Update 24.03.2026
+After simulation the RF Signal, the Schematic and PCB were designed. The following features were added to the final Design:
+
+# power supply
+There are two possibilities to supply the ICs with 5V. The obvious one is to 
