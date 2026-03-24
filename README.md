@@ -10,7 +10,7 @@ My main task is to design and build a Low Noise Amplifier that should me mounted
 To protect the LNA when transmitting, we will use coaxial Relais and a Sequencer. These will disconnect the LNA from the Signal path to the antenna. 
 Please take a look at "Systemskizze.png" for a more detailed layout.
 
-![Systemskizze](Systemskizze.png)
+![Systemskizze](images/Systemskizze.png)
 
 
 ## LNA Topologie and parts
