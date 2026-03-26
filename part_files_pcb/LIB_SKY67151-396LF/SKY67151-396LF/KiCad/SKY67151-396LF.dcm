@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SKY67151-396LF
-D RF Amplifier 700-3800MHz NF .6dB OP1dB 20dBm @2.5GHz
-K
-F https://datasheet.datasheetarchive.com/originals/distributors/DKDS-19/379330.pdf
-$ENDCMP
-#
-#End Doc Library

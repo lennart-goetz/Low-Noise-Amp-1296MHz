@@ -21,7 +21,6 @@
 **/*.o
 
 # --- Allgemeine Binaerformate & Backups ---
-*.zip
 *.7z
 *.tar.gz
 
