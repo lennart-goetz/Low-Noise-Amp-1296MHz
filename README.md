@@ -62,3 +62,27 @@ That brings the issue, that the 0402 components (Resistors, Capacitors...) are q
 - ground cutout: The "big" pads of the 0402 components have a bigger capacitance against ground than they are supposed to. A cutout in the ground plane reduces the effective area of the pad against ground and brings the capacitance down.
 
 ![PCB Design Version 1](images/PCB1.png)
+
+## Update 05.04.2026
+Due to some problems with ordering the Bias-T (and also for the fun of it) I will design my own version of the Bias-T. As I mentioned before, it is quite hard to find a product that can handel such a high RF Power. However, the concept of a Bias-T is really quite simple. Its just one Capacitor to Block DC from going into RF-Path, and one Inductor to block the RF to go into the DC Path. 
+
+Regarding our system there are two special aspects
+ - pro: we will only operate on 1.3GHz, the Bias-T only needs to work on that frequency
+ - con: the power requirements for the Bias-T is huge (~500W RF Power, ~230V)
+
+With these requirements, the inductor was the main challenge to design the Bias-T. A suitable Capacitor was found quite quickly 
+
+(Kyocera AVX 800B101)
+ - self resonant frequency is high enough
+ - can handle the Voltage in our system
+
+The Inductor was a bit more tricky though. Traditionally, the manufacturers of the Inductors do not supply data for the max voltage across the Inductor, because it was irrelevant for most use cases in the past. My usecase is a bit unordinary, so I texted the technical support from coilcraft. They replied and mentioned that the Inductor I chose, might be able to handle the Voltage. However, I decided to implement 3 different approches on my first test PCB, just to give it a try. 
+
+1. Normal Bias T with Inductor from Coilcraft
+2. Bias T with Hand made Inductor from copper wire
+3. Bias T with a quarter wave length stub
+
+The third approch is quite interesting in my opinion. In theory, the quarter wave length stub with the capacitor at its end, should act like a inductor. (so the RF Signal should see an open circuit there)
+However this will only work for the frequency it was designed for. Really looking forward to testing this one. 
+
+![Bias-T Design Version 1](images/Bias_T_1.png)
