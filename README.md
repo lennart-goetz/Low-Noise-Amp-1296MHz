@@ -86,3 +86,18 @@ The third approch is quite interesting in my opinion. In theory, the quarter wav
 However this will only work for the frequency it was designed for. Really looking forward to testing this one. 
 
 ![Bias-T Design Version 1](images/Bias_T_1.png)
+
+## Update 23.04.2026
+After the PCB and the parts for the LNA arrived, I used the local lab to assemble it. A vapor phase soldering machine was available for that and I totally happy with the results. The form factor of that machine is quite small and the results are super professional. I would definetly not recommend hand soldering the whole pcb, the SKY67151 and the Voltage regulator are just not accessible with a soldering iron. 
+
+![Assembled V1 of the LNA](images/LNA_V1.jpg)
+
+After the assembly, I carefully connected the PCB to power supply and checked for some parts getting too hot. And indeed I found out that **in the current version of the schematic one of the resistors is wrong**. R3 aims to set the Bias current for the Amplifier and it should be around 9.1k Ohm, not 330 Ohm. However I was lucky enaugh that after changing the resistor, the Amplifier still works as intended.
+
+After fixing that error I was able to test the pcb and I was very happy that it actually did what it was supposed to. In the following days I soldered a lot and tried to minimize the overall Noise-Figure of the device. That is done by adjusting the input impedance. Please refer to the SKY67151 data sheet for more detailed information. Here you can see some of the results that I measured:
+<p>
+  <img src="/images/LNA_V1_IP3.BMP" alt="IP3 Measurement on a Spectrum Analyzer" width="45%" />
+  <img src="/images/LNA_V1_S21.PNG" alt="S21 Measurement on a VNA" width="45%" />
+</p>
+
+Now that I confirmed that the concept works fine, I will start to design the next (and maybe final) version of the LNA. A suitable housing already exists, so the main challenge in that part will be to bring the pcb inside with clean transitions for the Signal. 
