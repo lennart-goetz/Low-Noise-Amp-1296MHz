@@ -101,3 +101,12 @@ After fixing that error I was able to test the pcb and I was very happy that it 
 </p>
 
 Now that I confirmed that the concept works fine, I will start to design the next (and maybe final) version of the LNA. A suitable housing already exists, so the main challenge in that part will be to bring the pcb inside with clean transitions for the Signal. 
+
+## Update 28.04.2026
+In the last week I completed the new design in Altium. More or less the schematic remained the same, apart from the DC supply. I placed two resistors in front of the Voltage regulator, because the LDO was quite hot while the LNA was running. These two resistors will reduce the voltage from 13.8V to ~8V so that the thermal stress for the voltage regualator is less severe. This is known as thermal load sharing. 
+
+Apart from that I only reformated the pcb to the new housing. That meant moving the DC circuit to the top part of the PCB. As a result I had to pass the DC supply under the RF path once, but I hope there wont be any issues because the setup is identical in the reference Layout for the SKY67151. 
+
+![3D view of the V2 LNA](images/LNA_V2_3D.png)
+
+One possible issue I already see with this PCB and my housing is the DC trace on the backside of the PCB. The backside is in full contact with aluminium when it is bolted into the housing. If the solder mask layer is damaged, the DC traces might short cicuit to grounded aluminium. I think I will place some isolating tape on the backside to prevent this from happening. 
