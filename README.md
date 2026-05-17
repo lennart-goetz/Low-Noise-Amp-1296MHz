@@ -110,3 +110,14 @@ Apart from that I only reformated the pcb to the new housing. That meant moving 
 ![3D view of the V2 LNA](images/LNA_V2_3D.png)
 
 One possible issue I already see with this PCB and my housing is the DC trace on the backside of the PCB. The backside is in full contact with aluminium when it is bolted into the housing. If the solder mask layer is damaged, the DC traces might short cicuit to grounded aluminium. I think I will place some isolating tape on the backside to prevent this from happening. 
+
+## Update 17.05.2026
+After the PCB arrived I was quite happy that it fit mechanically into my aluminium housing. After that, I assembled the board with our vapor phase soldering machine. Just like last time, it worked like a charm. I checked the current and voltage levels and everything seemed to work fine. However, when I measured the S21 on our vector analyzer, I was a bit disappointed. The characeristics looked not even close to the measurement on the prototype. 
+<p>
+  <img src="/images/LNA_V2_S21.PNG" alt="S21 Measurement on V2" width="45%" />
+  <img src="/images/LNA_V1_S21.PNG" alt="S21 Measurement on V1" width="45%" />
+</p>
+
+Right now I assume the Bandpass filter is the source of the problem. That part is pretty expensive so we decided to desolder it from the prototype and reuse it. I think the massive heat from desoldering damaged the part. A new part is ordered and fingers are crossed, that the issue will be fixed soon. 
+
+
