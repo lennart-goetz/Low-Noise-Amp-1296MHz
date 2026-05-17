@@ -43,7 +43,7 @@ We decided to use the following Bias-T:
 
 After simulation the RF Signal, the Schematic and PCB were designed. The following features were added to the final Design:
 
-![Circuit Diagramm Version 1](images/Schaltplan.jpg)
+![Circuit Diagramm Version 1](images/schematic.jpg)
 
 ### power supply
 
@@ -92,7 +92,7 @@ After the PCB and the parts for the LNA arrived, I used the local lab to assembl
 
 ![Assembled V1 of the LNA](images/LNA_V1.jpg)
 
-After the assembly, I carefully connected the PCB to power supply and checked for some parts getting too hot. And indeed I found out that **in the current version of the schematic one of the resistors is wrong**. R3 aims to set the Bias current for the Amplifier and it should be around 9.1k Ohm, not 330 Ohm. However I was lucky enaugh that after changing the resistor, the Amplifier still works as intended.
+After the assembly, I carefully connected the PCB to power supply and checked for some parts getting too hot. And indeed I found out that **in the old version of the schematic one of the resistors is wrong**.(the schematic I uploaded should be correct) R3 aims to set the Bias current for the Amplifier and it should be around 9.1k Ohm, not 330 Ohm. However I was lucky enaugh that after changing the resistor, the Amplifier still works as intended.
 
 After fixing that error I was able to test the pcb and I was very happy that it actually did what it was supposed to. In the following days I soldered a lot and tried to minimize the overall Noise-Figure of the device. That is done by adjusting the input impedance. Please refer to the SKY67151 data sheet for more detailed information. Here you can see some of the results that I measured:
 <p>
