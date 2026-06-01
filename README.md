@@ -128,3 +128,16 @@ While waiting for the PCBs to arrive, I took some time to think about the mechan
 After thinking for a bit I decided to minimize the total numbers of connectors in the system by soldering cables wherever possible. I was able to find a semi rigid cable with approximately 4 mm outer diameter that can handle 500 W at 1.3 GHz. I did a test and soldered the coax cable directly to a microstrip waveguide on my Bias-T PCB. I measure it on the VNA and the results are pretty promising. S11 was around -25 dB and S21 was around -0.2 dB.
 
 ![coax cable soldered to the pcb](images/Bias_T_conneciton.jpg)
+
+## Update 01.06.2026
+After the new Bandpassfilter for the LNA arrived, I soldered it onto the PCB and (to the relief of my supervisor) everything worked like a charm. After optimization S21 was at 32 dB while S11 was around -8dB and S22 was around -10dB.
+
+The noise figure performance always feels a bit like black magic, so I was excited when I started the measurement. Luckily after some optimization I was able to achieve a Noise Figure of around 0.5 dB which is really quite a good result.
+
+The next step was to measure the V1 of the Bias-T to start the Design of the final Version. The most interesting measurement was the S11 and S22 value. One can clearly see how the lambda/4 transformer turns into a lambda/2 Stub at 2.6GHz. At this frequency the low impedance against Ground is "transformed" back into a low impedance for the micro-strip-waveguide. Therefore the S11 and S22 is very low at 2.6GHz because most of the signal end up in the Ground Plane through the low impedance at the end of the Stub. 
+
+The isolation between the DC-Port and the HF-Ports was quite similar for all the different approaches (between 30dB and 40dB) which is enough for our application.
+
+Altough the lambda/4 approach is the most interesting for me, I decided to design the final version with an inductor. The size of the Stub is simply too large for the small housing that everything has to fit in. Also, the inductor is blocking the RF-Signal over a wide frequecy range and S11 and S22 are better for a wider frequency range. 
+
+As I mentioned in the last update, I decided to solder the coaxial cable straight to the Bias-T PCB. After finding a housing I was ready to design the final version of it. 
