@@ -134,12 +134,13 @@ After the new Bandpassfilter for the LNA arrived, I soldered it onto the PCB and
 
 The noise figure performance always feels a bit like black magic, so I was excited when I started the measurement. Luckily after some optimization I was able to achieve a Noise Figure of around 0.5 dB which is really quite a good result.
 
-The next step was to measure the V1 of the Bias-T to start the Design of the final Version. The most interesting measurement was the S11 and S22 value. One can clearly see how the lambda/4 transformer turns into a lambda/2 Stub at 2.6GHz. At this frequency the low impedance against Ground is "transformed" back into a low impedance for the micro-strip-waveguide. Therefore the S11 and S22 is very low at 2.6GHz because most of the signal end up in the Ground Plane through the low impedance at the end of the Stub. 
+The next step was to measure the V1 of the Bias-T to start the Design of the final Version. The most interesting measurement was the S21 value. One can clearly see how the lambda/4 transformer turns into a lambda/2 Stub at 2.6GHz. At this frequency the low impedance against Ground is "transformed" back into a low impedance for the micro-strip-waveguide. Therefore the S21 is very low at 2.6GHz because most of the signal end up in the Ground Plane through the low impedance at the end of the Stub. 
+![S21 measurement Bias-T V1](S21_quarter.jpg)
 
 The isolation between the DC-Port and the HF-Ports was quite similar for all the different approaches (between 30dB and 40dB) which is enough for our application.
 
 Altough the lambda/4 approach is the most interesting for me, I decided to design the final version with an inductor. The size of the Stub is simply too large for the small housing that everything has to fit in. Also, the inductor is blocking the RF-Signal over a wide frequecy range and S11 and S22 are better for a wider frequency range. 
 
 As I mentioned in the last update, I decided to solder the coaxial cable straight to the Bias-T PCB. After finding a housing I was ready to design the final version of it. A few days later the PCB was already in the mailbox and I assembled it today. The first measurement on the VNA looks promising with S11 and S22 below -20dB. S21 was around -0.5dB. 
-![design of the final Bias-T](images/bias_t_v2_design.jpg)
+![design of the final Bias-T](images/bias_t_v2_pic.jpg)
 ![assembled the final version of the Bias-T](images/bias_t_v2_3D.png)
