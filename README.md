@@ -140,4 +140,6 @@ The isolation between the DC-Port and the HF-Ports was quite similar for all the
 
 Altough the lambda/4 approach is the most interesting for me, I decided to design the final version with an inductor. The size of the Stub is simply too large for the small housing that everything has to fit in. Also, the inductor is blocking the RF-Signal over a wide frequecy range and S11 and S22 are better for a wider frequency range. 
 
-As I mentioned in the last update, I decided to solder the coaxial cable straight to the Bias-T PCB. After finding a housing I was ready to design the final version of it. 
+As I mentioned in the last update, I decided to solder the coaxial cable straight to the Bias-T PCB. After finding a housing I was ready to design the final version of it. A few days later the PCB was already in the mailbox and I assembled it today. The first measurement on the VNA looks promising with S11 and S22 below -20dB. S21 was around -0.5dB. 
+![design of the final Bias-T](images/bias_t_v2_design.jpg)
+![assembled the final version of the Bias-T](images/bias_t_v2_3D.png)
